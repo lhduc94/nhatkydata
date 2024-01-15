@@ -29,6 +29,7 @@ Hôm nay mình đã đọc Chương một của cuốn sách [Data Envelopment A
 Cuốn sách này tuy xuất bản năm 2007 nhưng khá có ích đối với việc mình đang làm là đánh giá chất lượng.
 
 **Đánh giá Hiệu suất là gì​?**
+
 Khi chúng ta có đầu vào, và nhận được kết quả, chúng ta hay đánh giá hiệu suất của kết quả xem với đầu vào như thế thì kết quả liệu có tốt không.​ Một số ví dụ cơ bản: Giá thành/sản phẩm, Lợi nhuận/sản phẩm.​
 
 $$
