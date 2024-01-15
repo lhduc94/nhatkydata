@@ -36,9 +36,10 @@
   display: inline-block;
   float: left;
   margin: 0;
+  color: #ffffff
 }
 #TOC > ul > li > a {
-  color: #ffffff;
+  color: #fcfcfc;
 }
 #TOC > ul > li:hover:after {
   content: '';
@@ -123,5 +124,5 @@
   border-bottom: 0;
 }
 #TOC ul {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }

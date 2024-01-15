@@ -223,7 +223,7 @@
 
 \title{Python for Data Analyst 2023}
 \author{Lê Huỳnh Đức}
-\date{2023-12-30}
+\date{2024-01-03}
 
 \begin{document}
 \maketitle
@@ -243,18 +243,22 @@
 \setcounter{tocdepth}{2}
 \tableofcontents
 }
-\chapter*{Lời nói đầu}\label{lux1eddi-nuxf3i-ux111ux1ea7u}
+\hypertarget{lux1eddi-nuxf3i-ux111ux1ea7u}{%
+\chapter*{Lời nói đầu}\label{lux1eddi-nuxf3i-ux111ux1ea7u}}
 
 
-\chapter{Giới thiệu Python và các công cụ hỗ trợ}\label{giux1a1i-thiuxeau-python-va-cac-cuxf4ng-cu-huxf4-trux1a1}
+\hypertarget{giux1a1i-thiuxeau-python-va-cac-cuxf4ng-cu-huxf4-trux1a1}{%
+\chapter{Giới thiệu Python và các công cụ hỗ trợ}\label{giux1a1i-thiuxeau-python-va-cac-cuxf4ng-cu-huxf4-trux1a1}}
 
-\chapter{Lập trình với ngôn ngữ Python}\label{lux1eadp-truxecnh-vux1edbi-nguxf4n-ngux1eef-python}
+\hypertarget{lux1eadp-truxecnh-vux1edbi-nguxf4n-ngux1eef-python}{%
+\chapter{Lập trình với ngôn ngữ Python}\label{lux1eadp-truxecnh-vux1edbi-nguxf4n-ngux1eef-python}}
 
-\section{Nội dung buổi học}\label{nux1ed9i-dung-buux1ed5i-hux1ecdc}
+\hypertarget{nux1ed9i-dung-chux1b0ux1a1ng}{%
+\section{Nội dung chương}\label{nux1ed9i-dung-chux1b0ux1a1ng}}
 
 \begin{itemize}
 \item
-  Giới thiệu các biến trong Python\hspace{0pt}
+  \protect\hyperlink{khai-buxe1o-biux1ebfn}{Khai báo biến}
 \item
   Các kiểu dữ liệu cơ bản: float, int, str, bool\hspace{0pt}
 \item
@@ -277,9 +281,12 @@
   Comment trong python
 \end{itemize}
 
-\section{Khai báo biến}\label{khai-buxe1o-biux1ebfn}
+\hypertarget{khai-buxe1o-biux1ebfn}{%
+\section*{Khai báo biến}\label{khai-buxe1o-biux1ebfn}}
 
-\subsection{Biến là gì}\label{biux1ebfn-luxe0-guxec}
+
+\hypertarget{biux1ebfn-luxe0-guxec}{%
+\subsection{Biến là gì}\label{biux1ebfn-luxe0-guxec}}
 
 Biến là vị trí bộ nhớ được dành riêng để lưu trữ dữ liệu.\\
 Một khi biến đã được lưu trữ, nghĩa là một khoảng không gian đã được cấp phát trong bộ nhớ đó.\\
@@ -307,7 +314,8 @@ Vì thế, bằng việc gán các dữ liệu khác nhau cho các biến, bạn
 Phạm Xuân Bách
 \end{verbatim}
 
-\subsection{Tại sao phải cần khai báo biến}\label{tux1ea1i-sao-phux1ea3i-cux1ea7n-khai-buxe1o-biux1ebfn}
+\hypertarget{tux1ea1i-sao-phux1ea3i-cux1ea7n-khai-buxe1o-biux1ebfn}{%
+\subsection{Tại sao phải cần khai báo biến}\label{tux1ea1i-sao-phux1ea3i-cux1ea7n-khai-buxe1o-biux1ebfn}}
 
 Hãy tưởng tượng như sau, bạn có một số dữ liệu là những con số với nhiều chữ số và các thao tác tính toán
 
@@ -341,13 +349,20 @@ Hãy tưởng tượng như sau, bạn có một số dữ liệu là những co
 12312978016568
 \end{verbatim}
 
-Một điều mà các bạn dễ dàng nhận ra đó là những con số với nhiều chữ số gây khó khăn trong việc sử dụng vì chúng có quá nhiều chữ số, đôi lúc chúng ta cũng có thể vô tình gây sai lệnh giá trị. Do đó ta cần đặt các biến lưu trữ các giá trị để có thể sử dụng lại. Đồng thời khi ta thay đổi giá trị của biến, các phép tính liên quan đến biến đó cũng thay đổi giá trị theo.
+Một điều mà các bạn dễ dàng nhận ra đó là những con số với nhiều chữ số gây khó khăn trong việc sử dụng vì chúng có quá nhiều chữ số, đôi lúc chúng ta cũng có thể vô tình gây sai lệnh giá trị. Vì vậy, việc tạo một biến giúp ta quản lý những giá trị này dễ dàng hơn
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{a }\OperatorTok{=} \DecValTok{52348252408}
 \NormalTok{b }\OperatorTok{=} \DecValTok{523482034}
 \NormalTok{c }\OperatorTok{=} \DecValTok{12312454534534}
+\end{Highlighting}
+\end{Shaded}
+
+Ví dụ khi tính cộng a và b
+
+\begin{Shaded}
+\begin{Highlighting}[]
 \NormalTok{a }\OperatorTok{+}\NormalTok{ b}
 \end{Highlighting}
 \end{Shaded}
@@ -366,7 +381,8 @@ Một điều mà các bạn dễ dàng nhận ra đó là những con số vớ
 12364802786942
 \end{verbatim}
 
-\subsection{Các quy tắc khi đặt biến trong Python}\label{cuxe1c-quy-tux1eafc-khi-ux111ux1eb7t-biux1ebfn-trong-python}
+\hypertarget{cuxe1c-quy-tux1eafc-khi-ux111ux1eb7t-biux1ebfn-trong-python}{%
+\subsection{Các quy tắc khi đặt biến trong Python}\label{cuxe1c-quy-tux1eafc-khi-ux111ux1eb7t-biux1ebfn-trong-python}}
 
 \begin{itemize}
 \tightlist
@@ -380,9 +396,9 @@ Một điều mà các bạn dễ dàng nhận ra đó là những con số vớ
   Tên biến của phân biệt chữ hoa và chữ thường như chúng mình đã đề cập trong bài viết về các lưu ý quan trọng cho người mới học Python.
 \end{itemize}
 
-Ví dụ
+Ví dụ
 
-Khi biến bắt đầu bằng ký tự \texttt{\_}, Python không báo lỗi
+Đặt tên có dấu gạch dưới ở đầu
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -390,7 +406,7 @@ Khi biến bắt đầu bằng ký tự \texttt{\_}, Python không báo lỗi
 \end{Highlighting}
 \end{Shaded}
 
-Khi biến bắt đầu bắt ký tự số \texttt{1}, Python báo lỗi \texttt{SyntaxError}, đây là một lỗi thuộc về lỗi cú pháp
+Khi đặt tên biến có số ở đầu, Python sẽ báo lỗi \texttt{SyntaxError}, lỗi \texttt{SyntaxError} sẽ báo cho chúng ta biết chúng ta đang vi phạm về lỗi cú pháp
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -399,23 +415,30 @@ Khi biến bắt đầu bắt ký tự số \texttt{1}, Python báo lỗi \textt
 \end{Shaded}
 
 \begin{verbatim}
-Cell In[10], line 1
+  Cell In[10], line 1
     1name = "Phạm Xuân Bách"
     ^
 SyntaxError: invalid decimal literal
 \end{verbatim}
 
-Nếu khai báo với tên trùng biến cũ thì giá trị sẽ bị đè lên
+Chúng ta có thể đặt số trong biến ở bất kì đâu ngoại trừ ký tự bắt đầu
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{name1 }\OperatorTok{=} \StringTok{"Phạm Xuân Bách"}
+\end{Highlighting}
+\end{Shaded}
+
+Nếu khai báo với tên trùng biến cũ thì giá trị sẽ bị đè lên
+
+ví dụ khi khai báo \texttt{name1\ =\ "Phạm\ Xuân\ Bách"}, khi ta khai báo \texttt{name1\ =\ Phạm\ Đình\ Đức}, lúc này giá trị sẽ đè lên giá trị cũ
+
+\begin{Shaded}
+\begin{Highlighting}[]
 \NormalTok{name1 }\OperatorTok{=} \StringTok{"Phạm Đình Đức"}
 \BuiltInTok{print}\NormalTok{(name1)}
 \end{Highlighting}
 \end{Shaded}
-
-Lúc này Python sẽ hiểu giá trị gần nhất được gán là
 
 \begin{verbatim}
 Phạm Đình Đức

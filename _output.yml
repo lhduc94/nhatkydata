@@ -6,7 +6,7 @@ bookdown::gitbook:
       collapse: subsection
       scroll_highlight: yes
       before: |
-        <li><a href="./">Nhật Ký Data</a></li>
+        <li><a href="./">Python For Data Analyst 2023</a></li>
       after: |
         <li><a href="" target="blank">Lê Huỳnh Đức</a></li>
   fig_caption: yes
