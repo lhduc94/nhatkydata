@@ -1,0 +1,200 @@
+## Khai báo biến
+
+### Biến là gì
+Biến là vị trí bộ nhớ được dành riêng để lưu trữ dữ liệu. \
+Một khi biến đã được lưu trữ, nghĩa là một khoảng không gian đã được cấp phát trong bộ nhớ đó. \
+Dựa trên kiểu dữ liệu của một biến, trình thông dịch cấp phát bộ nhớ và quyết định những gì có thể được lưu trữ trong khu nhớ dành riêng đó.\
+Vì thế, bằng việc gán các dữ liệu khác nhau cho các biến, bạn có thể lưu trữ số nguyên, văn bản, số thập phân cho biến\
+![](images/week2/variable.png)
+
+Để khai báo biến trong Python, ta dùng cú pháp​ `tenbien = giá trị`
+
+```python
+name = "Phạm Xuân Bách"
+```
+
+Để in giá trị của biến ra màn hình, ta dùng cú pháp `print(tenbien)`
+
+```python
+print(name)
+```
+
+```{.python_output}
+Phạm Xuân Bách
+```
+
+### Tại sao phải cần khai báo biến
+
+Hãy tưởng tượng như sau, bạn có một số dữ liệu là những con số với nhiều chữ số và các thao tác tính toán
+
+```python
+52348252408 + 523482034
+```
+
+```{.python_output}
+52871734442
+```
+
+```python
+52348252408 + 12312454534534
+```
+
+```{.python_output}
+12364802786942
+```
+
+```python
+523482034 + 12312454534534
+```
+
+```{.python_output}
+12312978016568
+```
+
+Một điều mà các bạn dễ dàng nhận ra đó là những con số với nhiều chữ số gây khó khăn trong việc sử dụng vì chúng có quá nhiều chữ số, đôi lúc chúng ta cũng có thể vô tình gây sai lệnh giá trị. Vì vậy, việc tạo một biến giúp ta quản lý những giá trị này dễ dàng hơn
+
+```python
+a = 52348252408
+b = 523482034
+c = 12312454534534
+```
+
+Ví dụ khi tính cộng a và b
+
+```python
+a + b
+```
+
+```{.python_output}
+52871734442
+```
+
+```python
+a + c
+```
+
+```{.python_output}
+12364802786942
+```
+
+### Các quy tắc khi đặt biến trong Python
+
+- Tên của biến phải được bắt đầu bằng một chữ hoặc một ký tự underscore (dấu gạch dưới: _).
+- Tên của biến không thể bắt đầu bằng một con số. Ngoài ký tự bắt đầu ra thì trong tên biến có thể sử dụng số, chữ và dấu gạch dưới như bình thường.
+- Biến trong Python phải có tên riêng, không trùng lặp với tên của các biến đang tồn tại trên file làm việc của bạn.
+- Tên biến của phân biệt chữ hoa và chữ thường như chúng mình đã đề cập trong bài viết về các lưu ý quan trọng cho người mới học Python.
+
+
+Ví dụ
+
+Đặt tên có dấu gạch dưới ở đầu 
+
+```python
+_name = "Phạm Xuân Bách"
+```
+
+Khi đặt tên biến có số ở đầu, Python sẽ báo lỗi `SyntaxError`, lỗi `SyntaxError` sẽ báo cho chúng ta biết chúng ta đang vi phạm về lỗi cú pháp
+
+```python
+1name = "Phạm Xuân Bách"
+```
+
+```{.python_output}
+  Cell In[10], line 1
+    1name = "Phạm Xuân Bách"
+    ^
+SyntaxError: invalid decimal literal
+```
+
+Chúng ta có thể đặt số trong biến ở bất kì đâu ngoại trừ ký tự bắt đầu
+
+```python
+name1 = "Phạm Xuân Bách"
+```
+
+Nếu khai báo với tên trùng biến cũ thì giá trị sẽ bị đè lên
+
+ví dụ khi khai báo `name1 = "Phạm Xuân Bách"`, khi ta khai báo `name1 = Phạm Đình Đức`, lúc này giá trị sẽ đè lên giá trị cũ
+
+```python
+name1 = "Phạm Đình Đức"
+print(name1)
+```
+
+```{.python_output}
+Phạm Đình Đức
+```
+
+Ví dụ khai báo với biến viết thường `name1` và viết hoa `NAME1` thì Python sẽ hiểu là hai biến khác nhau.
+
+```python
+name1 = "Phạm Đình Đức"
+NAME1 = "Phạm Xuân Bách"
+print(NAME1)
+print(name1)
+```
+
+```{.python_output}
+Phạm Xuân Bách
+Phạm Đình Đức
+```
+
+### Các cách khai báo biến trong Python
+
+- Khai báo mỗi giá trị mỗi dòng
+
+```python
+a = 1
+b = 2
+c = 3
+```
+
+- Khai báo các biến cùng 1 giá trị, thay vì khai báo
+
+```python
+a = 2000
+b = 2000
+c = 2000
+```
+
+Ta có thể khai báo
+
+```python
+a = b = c = 2000
+```
+
+- Khai báo nhiều biến khác nhau, khác giá trị trên cùng một hàng
+
+```python
+name, age, isMale = "Phạm Xuân Bách", 23, True
+```
+
+- Khai báo giá trị biến này bằng một biến khác
+
+```python
+a = 2000
+b = a
+```
+
+### In dữ liệu​
+
+Để in dữ liệu ra màn hình, ta có thể dùng lệnh `print​()`
+
+```python
+print("Phạm Xuân Bách")
+```
+
+```{.python_output}
+Phạm Xuân Bách
+```
+
+Có thể in nhiều giá trị cùng lúc bằng `print()` với các giá trị cách nhau bằng dấu `,`​
+
+```python
+a = 22
+print("Phạm Xuân Bách năm nay", a, "tuổi")
+```
+
+```{.python_output}
+Phạm Xuân Bách năm nay 22 tuổi
+```
