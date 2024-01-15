@@ -1,0 +1,23 @@
+## Ngày 15
+
+Hôm nay mình đã đọc gì
+
+[Efficient Feature Selection via Genetic Algorithms](https://towardsdatascience.com/efficient-feature-selection-via-genetic-algorithms-d6d3c9aff274)
+
+Đây là một bài viết trên Medium nói  về việc sử dụng Generic Algorithms. Generic Algorithms Tiếng Việt được gọi là Giải thuật di truyền, là thuật toán đầu tiên mình học được ngay khi bắt đầu học môn Máy học thống kê ở trường. Mình đã áp dụng nó vào bài toán tìm nghiệm xấp xỉ của một phương trình đa thức.
+
+Về Giải thuật di truyền có các định nghĩa chính:
+- Population (dân số)
+- Xác suất đột biến
+- Xác suất lai chéo
+- Chiến lược chọn các phần tử con
+
+Để hiểu rõ hơn các bạn có thể tham khảo ở Wiki (https://en.wikipedia.org/wiki/Genetic_algorithm)
+
+Tóm gọn lại bài viết này xem danh sách N features là một chuỗi gen có độ dài là N và chứa các giá trị 1 nghĩa là feature tại vị trí i sẽ được chọn và bằng 0 nghĩa là feature tại vị trí i sẽ không được chọn
+
+Thuật toán sẽ khởi tạo Một quần thể gồm 8 chuỗi gen khác nhau và tiến hành đột biến hoặc lai chéo giữa chúng để ra chuỗi gen mới -> tập Features đã được chọn.
+Sau đó sẽ dùng phương pháp đánh giá. 
+Bài này sử dụng code dựa trên thư viện https://github.com/DEAP/deap
+
+Và code đầy đủ có tại https://github.com/FlorinAndrei/fast_feature_selection
