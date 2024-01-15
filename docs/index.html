@@ -77,7 +77,10 @@
 <li><a href="./">Python For Data Analyst 2023</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Lời nói đầu</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Lời nói đầu</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#ngày-15"><i class="fa fa-check"></i><b>0.1</b> Ngày 15</a></li>
+</ul></li>
 <li class="chapter" data-level="1" data-path="giơi-thiêu-python-va-cac-công-cu-hô-trơ.html"><a href="giơi-thiêu-python-va-cac-công-cu-hô-trơ.html"><i class="fa fa-check"></i><b>1</b> Giới thiệu Python và các công cụ hỗ trợ</a></li>
 <li class="divider"></li>
 <li><a href="" target="blank">Lê Huỳnh Đức</a></li>
@@ -107,6 +110,25 @@
 <div id="lời-nói-đầu" class="section level1 unnumbered hasAnchor">
 <h1>Lời nói đầu<a href="index.html#lời-nói-đầu" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 
+
+<div id="ngày-15" class="section level2 hasAnchor" number="0.1">
+<h2><span class="header-section-number">0.1</span> Ngày 15<a href="index.html#ngày-15" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Hôm nay mình đã đọc gì</p>
+<p><a href="https://towardsdatascience.com/efficient-feature-selection-via-genetic-algorithms-d6d3c9aff274">Efficient Feature Selection via Genetic Algorithms</a></p>
+<p>Đây là một bài viết trên Medium nói về việc sử dụng Generic Algorithms. Generic Algorithms Tiếng Việt được gọi là Giải thuật di truyền, là thuật toán đầu tiên mình học được ngay khi bắt đầu học môn Máy học thống kê ở trường. Mình đã áp dụng nó vào bài toán tìm nghiệm xấp xỉ của một phương trình đa thức.</p>
+<p>Về Giải thuật di truyền có các định nghĩa chính:
+- Population (dân số)
+- Xác suất đột biến
+- Xác suất lai chéo
+- Chiến lược chọn các phần tử con</p>
+<p>Để hiểu rõ hơn các bạn có thể tham khảo ở Wiki (<a href="https://en.wikipedia.org/wiki/Genetic_algorithm" class="uri">https://en.wikipedia.org/wiki/Genetic_algorithm</a>)</p>
+<p>Tóm gọn lại bài viết này xem danh sách N features là một chuỗi gen có độ dài là N và chứa các giá trị 1 nghĩa là feature tại vị trí i sẽ được chọn và bằng 0 nghĩa là feature tại vị trí i sẽ không được chọn</p>
+<p>Thuật toán sẽ khởi tạo Một quần thể gồm 8 chuỗi gen khác nhau và tiến hành đột biến hoặc lai chéo giữa chúng để ra chuỗi gen mới -&gt; tập Features đã được chọn.
+Sau đó sẽ dùng phương pháp đánh giá.
+Bài này sử dụng code dựa trên thư viện <a href="https://github.com/DEAP/deap" class="uri">https://github.com/DEAP/deap</a></p>
+<p>Và code đầy đủ có tại <a href="https://github.com/FlorinAndrei/fast_feature_selection" class="uri">https://github.com/FlorinAndrei/fast_feature_selection</a></p>
+
+</div>
 </div>
             </section>
 
