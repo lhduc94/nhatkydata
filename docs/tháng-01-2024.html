@@ -116,11 +116,13 @@
 <div id="efficient-feature-selection-via-genetic-algorithms" class="section level3 hasAnchor" number="1.1.1">
 <h3><span class="header-section-number">1.1.1</span> <a href="https://towardsdatascience.com/efficient-feature-selection-via-genetic-algorithms-d6d3c9aff274">Efficient Feature Selection via Genetic Algorithms</a><a href="tháng-01-2024.html#efficient-feature-selection-via-genetic-algorithms" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Đây là một bài viết trên Medium nói về việc sử dụng Generic Algorithms. Generic Algorithms Tiếng Việt được gọi là Giải thuật di truyền, là thuật toán đầu tiên mình học được ngay khi bắt đầu học môn Máy học thống kê ở trường. Mình đã áp dụng nó vào bài toán tìm nghiệm xấp xỉ của một phương trình đa thức.</p>
-<p>Về Giải thuật di truyền có các định nghĩa chính:
-- Population (dân số)
-- Xác suất đột biến
-- Xác suất lai chéo
-- Chiến lược chọn các phần tử con</p>
+<p>Về Giải thuật di truyền có các định nghĩa chính:</p>
+<ul>
+<li><p>Population (dân số)</p></li>
+<li><p>Xác suất đột biến</p></li>
+<li><p>Xác suất lai chéo</p></li>
+<li><p>Chiến lược chọn các phần tử con</p></li>
+</ul>
 <p>Để hiểu rõ hơn các bạn có thể tham khảo ở Wiki (<a href="https://en.wikipedia.org/wiki/Genetic_algorithm" class="uri">https://en.wikipedia.org/wiki/Genetic_algorithm</a>)</p>
 <p>Tóm gọn lại bài viết này xem danh sách N features là một chuỗi gen có độ dài là N và chứa các giá trị 1 nghĩa là feature tại vị trí i sẽ được chọn và bằng 0 nghĩa là feature tại vị trí i sẽ không được chọn</p>
 <p>Thuật toán sẽ khởi tạo Một quần thể gồm 8 chuỗi gen khác nhau và tiến hành đột biến hoặc lai chéo giữa chúng để ra chuỗi gen mới -&gt; tập Features đã được chọn.

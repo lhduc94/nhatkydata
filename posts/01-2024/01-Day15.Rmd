@@ -7,9 +7,13 @@ Hôm nay mình đã đọc gì
 Đây là một bài viết trên Medium nói  về việc sử dụng Generic Algorithms. Generic Algorithms Tiếng Việt được gọi là Giải thuật di truyền, là thuật toán đầu tiên mình học được ngay khi bắt đầu học môn Máy học thống kê ở trường. Mình đã áp dụng nó vào bài toán tìm nghiệm xấp xỉ của một phương trình đa thức.
 
 Về Giải thuật di truyền có các định nghĩa chính:
+
 - Population (dân số)
+
 - Xác suất đột biến
+
 - Xác suất lai chéo
+
 - Chiến lược chọn các phần tử con
 
 Để hiểu rõ hơn các bạn có thể tham khảo ở Wiki (https://en.wikipedia.org/wiki/Genetic_algorithm)
