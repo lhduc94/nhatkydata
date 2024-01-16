@@ -41,12 +41,12 @@ và chiến lược nào có thể giữ chân họ                             
 Người dùng muốn đảm bảo mô hình đáng tin cậy                      Chứng minh độ tin cậy và độ chính xác của mô hình
 --------------------------------------------------------
 
-| Name  | Age | City           |
-|-------|-----|----------------|
-| John  | 25  | New York       |
-| Jane  | 30  | San Francisco  |
-| Bob   | 22  | Chicago        |
-| Alice | 28  | Los Angeles    |
+| Name  | Age |
+|-------|-----|
+| Người dùng muốn biết họ nên gọi cho  ai từ một danh sách rộng lớn| Giới thiệu khách hàng mới tiềm năng   |
+| Jane  | 30  |
+| Bob   | 22  |
+| Alice | 28  |
 
 **Xác định người dùng của bạn**
 
