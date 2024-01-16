@@ -33,11 +33,14 @@ Là một nhà khoa học dữ liệu, các kỹ năng thu thập, xử lý và 
 Ví dụ
 --------------------------------------------------------
 Mục tiêu    App
-----       ---
-Người dùng muốn biết họ nên gọi cho ai từ một danh sách rộng lớn| Giới thiệu khách hàng mới tiềm năng   
-Người dùng muốn xác định ai có nguy cơ rời đi và chiến lược nào có thể giữ chân họ|Đề xuất chiến lược giữ chân khách hàng hiện tại
-Người dùng muốn đảm bảo mô hình đáng tin cậy   Chứng minh độ tin cậy và độ chính xác của mô hình
+----                                                              ---
+Người dùng muốn biết họ nên gọi cho 
+ai từ một danh sách rộng lớn                                      Giới thiệu khách hàng mới tiềm năng   
+Người dùng muốn xác định ai có nguy cơ rời đi 
+và chiến lược nào có thể giữ chân họ                              Đề xuất chiến lược giữ chân khách hàng hiện tại
+Người dùng muốn đảm bảo mô hình đáng tin cậy                      Chứng minh độ tin cậy và độ chính xác của mô hình
 --------------------------------------------------------
+
 **Xác định người dùng của bạn**
 
 Ví dụ Sale manager:
