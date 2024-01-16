@@ -1,0 +1,20 @@
+##  Ngày 16/2024
+
+### Chuẩn bị tài liệu cho khóa Data Analyst
+
+Tập trung vào các nội dung như Lambda function là gì, map, reduce,filter kết hợp cùng với lambda function
+
+Iterable và Iterator là gì
+- Iterable là kiểu cấu trúc có thể dùng vòng lặp for được, thay vì dùng index mình có thể for phần tử trong cấu trúc
+- Iterator là kiểu duyệt của các Iterable, để tạo iterator mình có thể áp dụng hàm `iter(a)`. Để duyệt phần tử kế tiếp mình dùng `next()`. Nếu không còn phần tử nào sẽ trả về lỗi StopIteration
+- Các kiểu Iterator như enumerate, zip
+
+Tiếp theo là List comprehension, dict comprehension
+
+Các kiểu collections mới
+
+- Counter : dùng để đếm nhanh số lượng các phần tử
+- Defaultdict: handle lỗi khi key không có trong dict, thường trả về giá trị mặc định tùy mình set
+- Namedtuple: định nghĩa một tuple có cấu trúc, tên của từng phần tử
+
+
