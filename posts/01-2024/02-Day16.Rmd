@@ -44,7 +44,7 @@ Người dùng muốn đảm bảo mô hình đáng tin cậy                   
 | Name  | Age |
 |-------|-----|
 | Người dùng muốn biết họ nên gọi cho  ai từ một danh sách rộng lớn| Giới thiệu khách hàng mới tiềm năng   |
-| Jane  | 30  |
+| Người dùng muốn xác định ai có nguy cơ rời đi và chiến lược nào có thể giữ chân họ | Đề xuất chiến lược giữ chân khách hàng  |
 | Bob   | 22  |
 | Alice | 28  |
 
