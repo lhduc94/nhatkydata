@@ -1,11 +1,11 @@
 --- 
-title: "Python for Data Analyst 2023"
+title: "Nhật Ký Data"
 author: "Lê Huỳnh Đức"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-description: "Python for Data Analyst 2023"
+description: "Nhật Ký Data"
 ---
 
 # Lời nói đầu {-}
