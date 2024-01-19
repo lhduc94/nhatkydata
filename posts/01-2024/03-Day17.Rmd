@@ -57,3 +57,15 @@ Thầy dùng R2 score để tính, sử dụng 2 cách là dùng thư vienj skle
 def adj_r2_score(y_true, y_pred, p=x_train_scaled.shape[1]):
     return 1-(1-r2_score(y_true, y_pred)) * (len(y_true)-1) / (len(y_true) - p - 1)
 ```
+
+
+Thầy dùng Scaler là Robust Scaler, trước đó đã test box cox nhưng vì có tồn  tại dữ liệu âm nên không dùng box-cox.
+
+Giải pháp của mình là:
+
+1. Remove các dòng âm và  bằng 0 -> khoảng 500 dòng trên 300k dòng
+2. Dùng thuật toán yeo-johnson tương tự như box cox nhưng có thể áp dụng cho số âm
+
+Mình cũng hướng dẫn bạn ấy sử dụng KFold thay vì train_test_split vì train_test_split có khả năng bị bias vì không xác thực chéo trên toàn bộ dữ liệu( bị bias). Kết quả mình test thử train_test_split với nhiều seed khác nhau thì kết quả R2 không đồng đều. 
+
+

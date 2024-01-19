@@ -341,6 +341,13 @@ Chúng ta có thể mở rộng công thức trên với Nhiều đầu
 <div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="tháng-01-2024.html#cb3-1" tabindex="-1"></a><span class="co">##############################################################################################################</span></span>
 <span id="cb3-2"><a href="tháng-01-2024.html#cb3-2" tabindex="-1"></a><span class="kw">def</span> adj_r2_score(y_true, y_pred, p<span class="op">=</span>x_train_scaled.shape[<span class="dv">1</span>]):</span>
 <span id="cb3-3"><a href="tháng-01-2024.html#cb3-3" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">1</span><span class="op">-</span>(<span class="dv">1</span><span class="op">-</span>r2_score(y_true, y_pred)) <span class="op">*</span> (<span class="bu">len</span>(y_true)<span class="op">-</span><span class="dv">1</span>) <span class="op">/</span> (<span class="bu">len</span>(y_true) <span class="op">-</span> p <span class="op">-</span> <span class="dv">1</span>)</span></code></pre></div>
+<p>Thầy dùng Scaler là Robust Scaler, trước đó đã test box cox nhưng vì có tồn tại dữ liệu âm nên không dùng box-cox.</p>
+<p>Giải pháp của mình là:</p>
+<ol style="list-style-type: decimal">
+<li>Remove các dòng âm và bằng 0 -&gt; khoảng 500 dòng trên 300k dòng</li>
+<li>Dùng thuật toán yeo-johnson tương tự như box cox nhưng có thể áp dụng cho số âm</li>
+</ol>
+<p>Mình cũng hướng dẫn bạn ấy sử dụng KFold thay vì train_test_split vì train_test_split có khả năng bị bias vì không xác thực chéo trên toàn bộ dữ liệu( bị bias). Kết quả mình test thử train_test_split với nhiều seed khác nhau thì kết quả R2 không đồng đều.</p>
 
 </div>
 </div>
