@@ -2,7 +2,7 @@
 
 ### Kết hợp ChatGPT vào Named Entity Recognition
 
-### Giới thiệu về Named Entity Recognition
+#### Giới thiệu về Named Entity Recognition
 
 Named Entity Recogtition là bài toán nhận dạng thực thể, một số thực thể thông dùng như
 
@@ -22,7 +22,7 @@ Dựa vào các thông tin được trích xuất đó, chúng ta có t
     - Người dùng đang xem các bài báo liên quan đến xe, chúng ta có thể trích xuất hãng xe, dòng xe từ bài báo mà người dùng đọc, sau đó gợi ý các sản phẩm xe cùng với hãng đó.
     - Product Matching: Trên các sàn thương mại điện tử, nhiều nhà cung cấp có thể cùng bán một sản phẩm, việc trích xuất thông tin của các sản phẩm có thể giúp gom các sản phẩm giống nhau về cùng một nhóm, qua đó có thể nắm bắt được giá cả, sức mua của sản phẩm đó.
 
-### ChatGPT
+#### ChatGPT
 
 Để có thể nhận diện được các thực thể, thông thường chúng ta sẽ huấn luyện các mô hình với dữ liệu huấn luyện được gán nhãn trước.
 Một số ví dụ về huấn luyện các mô hình
@@ -56,7 +56,7 @@ Kết quả trả ra
 |2|Black Friday, buy cars at great prices|	None|	None|
 
 
-## Phân tích Shop Branch
+### Phân tích Shop Branch
 
 
 ![](/images/01-2024/18/18.png)
