@@ -1,5 +1,59 @@
 ## Ngày 17
 
-Ban ngày ngồi sửa slide giảng dạy 
+### Chữa bài 
 
-Ban đêm chữa bài cho bạn nên không có gì để viết 
+Là một bài về dự đoán chất lượng nguồn nước gồm các thông số cơ bản như
+
+- Location
+- Temp
+- pH
+- EC
+- Do
+- Turb
+- TN
+- TP
+
+Và nhãn là Toc
+
+Phần này mình có đọc code của một thầy bên Hàn, thầy áp dùng fill outlier bằng IQR rất đơn giản
+
+loại bỏ các điểm nằm ngoài Q3 + 3 * IQR và Q1 - 3 * IQR. Lần này thầy dùng hệ số bằng 3 chứ không bằng 1 như mặc dịnh
+
+Sau đó thầy vẽ các phân phối của nó ra trước khi xử lý
+
+
+```python
+def show_hist_by_target(df, columns):
+    sns.set(font_scale=1.0)
+    sns.set_style('white')
+    for column in columns:
+        fig, axs = plt.subplots(nrows=1, ncols=2, figsize=(12, 3))
+        sns.boxplot(data=df, y=column, ax=axs[0])
+        sns.histplot(data=df, x=column, ax=axs[1], kde=True, bins=200, stat='frequency')
+        plt.subplots_adjust(hspace=0.8,wspace=0.6)
+
+```
+
+Tiếp theo thầy sử dụng ktest và normal test xem dữ liệu có bị skewness không
+
+```python
+for k in df.columns:
+    test_stat, p_val = stats.kstest(df[k], 'norm')
+    print("Test-statistics : {:.3f}, p-value : {:.3f}, skewness : {:.3f}".format(test_stat, p_val, df[k].skew()))
+    
+# (Kolmogorov-Smirnov) kstest / shapiro
+
+for k in df.columns:
+    test_stat, p_val = stats.kstest(df[k], 'norm')
+    print("Test-statistics : {:.3f}, p-value : {:.3f}, skewness : {:.3f}".format(test_stat, p_val, df[k].skew()))
+    
+# (Kolmogorov-Smirnov) kstest / shapiro
+```
+
+Thầy dùng R2 score để tính, sử dụng 2 cách là dùng thư vienj sklearn và dùng công thức điều chỉnh
+
+```python
+##############################################################################################################
+def adj_r2_score(y_true, y_pred, p=x_train_scaled.shape[1]):
+    return 1-(1-r2_score(y_true, y_pred)) * (len(y_true)-1) / (len(y_true) - p - 1)
+```
