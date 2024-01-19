@@ -59,7 +59,7 @@ Kết quả trả ra
 ### Phân tích Shop Branch
 
 
-![](/images/01-2024/18/18.png)
+![](images/01-2024/18/18.png)
 
 Bài toán của mình là tìm ra các vị trí A, B sao cho
 - Bắt đầu từ A: Profit của các chi nhánh tăng vọt
