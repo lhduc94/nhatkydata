@@ -50,7 +50,7 @@ dưới đây là một ví dụ về prompt để lấy brand và model
 Kết quả trả ra 
 
 ||text|	brand|	model|
-|--|--|--|--|
+|-|------|--|--|
 |0|Toyota Land Cruise LC300 is a good and powerfu...	|Toyota Land Cruiser|LC300|
 |1|I am a big fan of Jeep Wrangle Rubicon, an off...	|Jeep	|Wrangler Rubicon|
 |2|Black Friday, buy cars at great prices|	None|	None|
