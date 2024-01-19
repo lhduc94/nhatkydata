@@ -33,7 +33,7 @@ https://www.analyticsvidhya.com/blog/2022/06/how-to-train-an-ner-model-with-hugg
 
 https://blog.futuresmart.ai/building-a-custom-ner-model-with-spacy-a-step-by-step-guide
 
-Ngoài ra chúng ta cũng có thể tận dụng sức mạnh của CHatGPT
+Ngoài ra chúng ta cũng có thể tận dụng sức mạnh của chatGPT
 
 dưới đây là một ví dụ về prompt để lấy brand và model xe
 
