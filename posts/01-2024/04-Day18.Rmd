@@ -1,0 +1,70 @@
+## Ngày 18
+
+### Kết hợp ChatGPT vào Named Entity Recognition
+
+### Giới thiệu về Named Entity Recognition
+
+Named Entity Recogtition là bài toán nhận dạng thực thể, một số thực thể thông dùng như
+
+- PERSON : Tên người
+- LOCATION: Địa chỉ
+- DATE: Ngày tháng năm
+- ORG: Tên các tổ chức.
+
+Ngoài ra tùy vào yêu cầu của mỗi bài toán có thể có những Named Entity Recoginition.
+
+- Bài toán trích xuất thông tin xe thì có thêm BRAND, MODEL, YEAR, CAR_TYPE ....
+- Bài toán trích xuất thông tin từ các sản phẩm trên các sàn thương mại điện tử : BRAND, PRODUCT_NAME, SIZE, PRICE 
+
+Dựa vào các thông tin được trích xuất đó, chúng ta có thể làm các bài toán như sau:
+- Lưu trữ dữ liệu : sau khi trích xuất thông tin về một item, chúng ta có thể lưu trữ các thông tin đó vào các bảng có cấu trúc hoặc lưu vào SQL
+- Các bài toán Recommendation: Dựa vào các thông tin trích xuất đó, chúng ta có thể đưa ra gợi ý các sản phẩm cho người dùng. Ví dụ như:
+    - Người dùng đang xem các bài báo liên quan đến xe, chúng ta có thể trích xuất hãng xe, dòng xe từ bài báo mà người dùng đọc, sau đó gợi ý các sản phẩm xe cùng với hãng đó.
+    - Product Matching: Trên các sàn thương mại điện tử, nhiều nhà cung cấp có thể cùng bán một sản phẩm, việc trích xuất thông tin của các sản phẩm có thể giúp gom các sản phẩm giống nhau về cùng một nhóm, qua đó có thể nắm bắt được giá cả, sức mua của sản phẩm đó.
+
+### ChatGPT
+
+Để có thể nhận diện được các thực thể, thông thường chúng ta sẽ huấn luyện các mô hình với dữ liệu huấn luyện được gán nhãn trước.
+Một số ví dụ về huấn luyện các mô hình
+
+https://medium.com/@mjghadge9007/building-your-own-custom-named-entity-recognition-ner-model-with-spacy-v3-a-step-by-step-guide-15c7dcb1c416
+
+https://www.analyticsvidhya.com/blog/2022/06/how-to-train-an-ner-model-with-huggingface/
+
+https://blog.futuresmart.ai/building-a-custom-ner-model-with-spacy-a-step-by-step-guide
+
+Ngoài ra chúng ta cũng có thể tận dụng sức mạnh của CHatGPT
+
+dưới đây là một ví dụ về prompt để lấy brand và model xe
+
+```python
+ messages=[
+        {"role": "system", "content": "Perform Name Entity Recognition task \
+         to extract car brand and car model name from paragraphs"},
+        {"role": "system", "content": "Output format: a string v1:v2 where v1 is car brand and v2 is car model for each input.\
+          If not found car brand then v1 = None. If not found car model then v2 = None"},
+        {"role": "user", "content": text}
+    ],
+```
+
+Kết quả trả ra 
+
+||text|	brand|	model|
+|--|--|--|--|
+|0|Toyota Land Cruise LC300 is a good and powerfu...	|Toyota Land Cruiser|LC300|
+|1|I am a big fan of Jeep Wrangle Rubicon, an off...	|Jeep	|Wrangler Rubicon|
+|2|Black Friday, buy cars at great prices|	None|	None|
+
+
+## Phân tích Shop Branch
+
+
+![](/images/01-2024/18/18.png)
+
+Bài toán của mình là tìm ra các vị trí A, B sao cho
+- Bắt đầu từ A: Profit của các chi nhánh tăng vọt
+- Sau khi qua B: Profit của các chi nhánh đi ngang
+
+Sau đó đưa ra các điểm Ti, Tj là lần lượt là thời gian đạt được điểm A và điểm B
+
+Dựa vào đó, phòng ban Kinh doanh sẽ biết được các chi nhánh nào đang hoạt động không hiệu quả để đưa ra các giải pháp phù hợp

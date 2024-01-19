@@ -6,3 +6,8 @@ ngày-16
 chuẩn-bị-tài-liệu-cho-khóa-data-analyst
 step-by-step-guide-to-designing-a-user-friendly-application
 ngày-17
+ngày-18
+kêt-hơp-chatgpt-vao-named-entity-recognition
+giơi-thiêu-vê-named-entity-recognition
+chatgpt
+phân-tich-shop-branch
