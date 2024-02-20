@@ -4,20 +4,20 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Nhật Ký Data</title>
-  <meta name="description" content="Nhật Ký Data" />
+  <title>Chương 2 Tháng 01 2024 | Nhật Ký Data</title>
+  <meta name="description" content="Chương 2 Tháng 01 2024 | Nhật Ký Data" />
   <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Nhật Ký Data" />
+  <meta property="og:title" content="Chương 2 Tháng 01 2024 | Nhật Ký Data" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="Nhật Ký Data" />
+  <meta property="og:description" content="Chương 2 Tháng 01 2024 | Nhật Ký Data" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Nhật Ký Data" />
+  <meta name="twitter:title" content="Chương 2 Tháng 01 2024 | Nhật Ký Data" />
   
-  <meta name="twitter:description" content="Nhật Ký Data" />
+  <meta name="twitter:description" content="Chương 2 Tháng 01 2024 | Nhật Ký Data" />
   
 
 <meta name="author" content="Lê Huỳnh Đức" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="tháng-01-2024.html"/>
 
-<link rel="next" href="tháng-01-2024.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -192,22 +192,61 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Nhật Ký Data</h1>
-<p class="author"><em>Lê Huỳnh Đức</em></p>
-<p class="date"><em>2024-02-20</em></p>
-</div>
-<div id="lời-nói-đầu" class="section level1 unnumbered hasAnchor">
-<h1>Lời nói đầu<a href="index.html#lời-nói-đầu" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="tháng-01-2024-1" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chương 2</span> Tháng 01 2024<a href="tháng-01-2024-1.html#tháng-01-2024-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 
+<div id="ngày-15-1" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Ngày 15<a href="tháng-01-2024-1.html#ngày-15-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Hôm nay mình đã đọc gì</p>
+<div id="cach-visualize-counts-va-labels-cho-histogram-dung-seaborn-va-numpy" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Cách visualize counts và labels cho histogram dùng seaborn và numpy<a href="tháng-01-2024-1.html#cach-visualize-counts-va-labels-cho-histogram-dung-seaborn-va-numpy" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Thông thường, khi visualize mặc định histogram của seaborn sẽ không thể hiện tất cả các nhãn của bins và số lượng mỗi bin</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="tháng-01-2024-1.html#cb5-1" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb5-2"><a href="tháng-01-2024-1.html#cb5-2" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns </span>
+<span id="cb5-3"><a href="tháng-01-2024-1.html#cb5-3" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
+<span id="cb5-4"><a href="tháng-01-2024-1.html#cb5-4" tabindex="-1"></a>x <span class="op">=</span> np.random.uniform(size<span class="op">=</span><span class="dv">200</span>)</span>
+<span id="cb5-5"><a href="tháng-01-2024-1.html#cb5-5" tabindex="-1"></a>sns.histplot(x, bins<span class="op">=</span><span class="dv">10</span>)</span></code></pre></div>
+<p><img src="images/02-2024/20/normal_histogram.png" /></p>
+<p>Như trên sẽ rất khó theo dõi các giá trị và số lượng, do đó cần phải tìm được giá trị của các bin và số lượng. May mắn thay seaborn histogram tương tự numpy nên ta có thể dùng hàm <code>np.histogram</code></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="tháng-01-2024-1.html#cb6-1" tabindex="-1"></a>counts, bin_labels <span class="op">=</span> np.histogram(x, bins<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb6-2"><a href="tháng-01-2024-1.html#cb6-2" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(counts), counts)</span>
+<span id="cb6-3"><a href="tháng-01-2024-1.html#cb6-3" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(bin_labels), bin_labels)</span></code></pre></div>
+<pre class="python_output"><code>10 [22 24 20 24 11 19 20 18 18 24]
+11 [0.00552212 0.1036586  0.20179508 0.29993156 0.39806804 0.49620453
+ 0.59434101 0.69247749 0.79061397 0.88875045 0.98688694]</code></pre>
+<p>Các bạn có thể thấy với tham số <code>bins</code> đưa vào chỉ có <code>10</code> trong khi kết quả nhãn <code>bin_labels</code> lại có 11 giá trị, trong đó giá trị đầu là giá trị nhỏ nhất của <code>x</code> và giá trị cuối là giá trị cao nhất của x. Do đó khoảng đầu tiên của bin đầu tiên có giá trị nằm từ <code>[0.00552212, 0.1036586)</code></p>
+<p>Để kiểm tra xem có đúng thể không, ví dụ kiểm tra bin đầu tiên có phải 22 phần tử không</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="tháng-01-2024-1.html#cb8-1" tabindex="-1"></a><span class="bu">len</span>(x[(x<span class="op">&gt;=</span>bin_labels[<span class="dv">0</span>]) <span class="op">&amp;</span> (x<span class="op">&lt;</span>bin_labels[<span class="dv">1</span>])])</span></code></pre></div>
+<pre class="python_output"><code>22</code></pre>
+<p>Chính xác!!</p>
+<p>Dùng <code>matplotlib</code> để plot text</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="tháng-01-2024-1.html#cb10-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt </span>
+<span id="cb10-2"><a href="tháng-01-2024-1.html#cb10-2" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="tháng-01-2024-1.html#cb10-3" tabindex="-1"></a>ax <span class="op">=</span> sns.histplot(x, bins<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb10-4"><a href="tháng-01-2024-1.html#cb10-4" tabindex="-1"></a>bin_heights <span class="op">=</span> [p.get_height() <span class="cf">if</span> p.get_height() <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="fl">0.1</span> <span class="cf">for</span> p <span class="kw">in</span> ax.patches]</span>
+<span id="cb10-5"><a href="tháng-01-2024-1.html#cb10-5" tabindex="-1"></a><span class="co"># Hiển thị giá trị count từng bin</span></span>
+<span id="cb10-6"><a href="tháng-01-2024-1.html#cb10-6" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(bin_heights)):</span>
+<span id="cb10-7"><a href="tháng-01-2024-1.html#cb10-7" tabindex="-1"></a>    plt.text(ax.patches[i].get_x() <span class="op">+</span> ax.patches[i].get_width() <span class="op">/</span> <span class="dv">2</span>,</span>
+<span id="cb10-8"><a href="tháng-01-2024-1.html#cb10-8" tabindex="-1"></a>            bin_heights[i],</span>
+<span id="cb10-9"><a href="tháng-01-2024-1.html#cb10-9" tabindex="-1"></a>            <span class="bu">str</span>(<span class="bu">int</span>(bin_heights[i])),</span>
+<span id="cb10-10"><a href="tháng-01-2024-1.html#cb10-10" tabindex="-1"></a>            fontsize<span class="op">=</span><span class="dv">14</span>,</span>
+<span id="cb10-11"><a href="tháng-01-2024-1.html#cb10-11" tabindex="-1"></a>            ha<span class="op">=</span><span class="st">&#39;center&#39;</span>,</span>
+<span id="cb10-12"><a href="tháng-01-2024-1.html#cb10-12" tabindex="-1"></a>            va<span class="op">=</span><span class="st">&#39;bottom&#39;</span>)</span>
+<span id="cb10-13"><a href="tháng-01-2024-1.html#cb10-13" tabindex="-1"></a>mids <span class="op">=</span> [rect.get_x() <span class="op">+</span> rect.get_width() <span class="op">/</span> <span class="dv">2</span> <span class="cf">for</span> rect <span class="kw">in</span> ax.patches]</span>
+<span id="cb10-14"><a href="tháng-01-2024-1.html#cb10-14" tabindex="-1"></a>labels <span class="op">=</span> [(<span class="bu">round</span>(i,<span class="dv">2</span>),<span class="bu">round</span>(j,<span class="dv">2</span>)) <span class="cf">for</span> i,j <span class="kw">in</span> <span class="bu">zip</span>(bin_labels[:<span class="op">-</span><span class="dv">1</span>], bin_labels[<span class="dv">1</span>:])]</span>
+<span id="cb10-15"><a href="tháng-01-2024-1.html#cb10-15" tabindex="-1"></a>ax.set_xticks(mids, labels<span class="op">=</span>labels, fontsize<span class="op">=</span><span class="dv">14</span>, rotation<span class="op">=</span><span class="dv">90</span>)</span></code></pre></div>
+<p><img src="images/02-2024/20/after_labeling.png" /></p>
+
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
+<a href="tháng-01-2024.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="tháng-01-2024.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
