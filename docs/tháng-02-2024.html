@@ -221,7 +221,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Chính xác!!</p>
 <p>Dùng <code>matplotlib</code> để plot text</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="tháng-02-2024.html#cb10-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt </span>
-<span id="cb10-2"><a href="tháng-02-2024.html#cb10-2" tabindex="-1"></a></span>
+<span id="cb10-2"><a href="tháng-02-2024.html#cb10-2" tabindex="-1"></a>counts, bin_labels <span class="op">=</span> np.histogram(x, bins<span class="op">=</span><span class="dv">10</span>)</span>
 <span id="cb10-3"><a href="tháng-02-2024.html#cb10-3" tabindex="-1"></a>ax <span class="op">=</span> sns.histplot(x, bins<span class="op">=</span><span class="dv">10</span>)</span>
 <span id="cb10-4"><a href="tháng-02-2024.html#cb10-4" tabindex="-1"></a>bin_heights <span class="op">=</span> [p.get_height() <span class="cf">if</span> p.get_height() <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="fl">0.1</span> <span class="cf">for</span> p <span class="kw">in</span> ax.patches]</span>
 <span id="cb10-5"><a href="tháng-02-2024.html#cb10-5" tabindex="-1"></a><span class="co"># Hiển thị giá trị count từng bin</span></span>

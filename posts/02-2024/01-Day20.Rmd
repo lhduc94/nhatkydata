@@ -47,7 +47,7 @@ Dùng `matplotlib` để plot text
 
 ```python
 import matplotlib.pyplot as plt 
-
+counts, bin_labels = np.histogram(x, bins=10)
 ax = sns.histplot(x, bins=10)
 bin_heights = [p.get_height() if p.get_height() > 0 else 0.1 for p in ax.patches]
 # Hiển thị giá trị count từng bin
