@@ -1,5 +1,8 @@
 ## Ngày 3 {-}
 
+
+https://towardsdatascience.com/location-analytics-use-cases-that-every-data-scientist-should-know-740b708a2504
+
 ### Làm sao để xây dựng chiến lược mở rộng chi nhánh tốt nhất {-}
 
 https://predikdata.com/how-to-create-the-best-branch-expansion-strategy/
@@ -87,3 +90,5 @@ https://predikdata.com/foot-traffic-in-pharmacies-cvs-pharmacy-vs-walgreens/
 https://locatium.ai/locaium-ai-blog-cannibalization-analysis/
 https://targomo.medium.com/introducing-cannibalization-analysis-examine-the-impact-of-competitors-and-network-branches-on-190e08ae002
 https://carto.com/blog/cannibalization-analysis-tutorial#:~:text=Cannibalization%20analysis%20evaluates%20the%20impact,impact%20on%20a%20business'%20revenue.
+
+https://github.com/CarlitosDev/causalCannibalisation?tab=readme-ov-file
