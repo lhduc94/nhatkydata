@@ -1,3 +1,3 @@
-## Ngày 21
+## Ngày 21 {-}
 
 Nhận ra rằng violinplot có vẻ không phù hợp bằng nhiều histogram plot, vì violinplot chỉ show kde distribution chứ k show histogram plot, do đó không biết được chính xác bin nào đang cao nhất
