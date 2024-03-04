@@ -48,3 +48,34 @@ Phân tích thị trường lao động địa phương để đảm bảo có s
 
 - Quản lý hiệu suất
 Theo dõi hiệu quả hoạt động của chi nhánh mới bằng các chỉ số hiệu suất chính (KPI) và các tiêu chuẩn đã được thiết lập. Xác định các chi nhánh hoạt động kém hiệu quả và các yếu tố góp phần vào hiệu quả hoạt động của chúng để đưa ra quyết định dựa trên dữ liệu về việc cải thiện hoặc đóng cửa. Việc tích hợp chiến lược tiếp thị của bạn, bao gồm cả phương tiện truyền thông xã hội, với thông tin vị trí cho phép bạn thâm nhập các thị trường mới, nhắm mục tiêu vào các doanh nghiệp nhỏ và thúc đẩy mở rộng quốc tế. Bằng cách khai thác thông tin vị trí để mở rộng thị trường, bạn có thể cung cấp các sản phẩm hoặc dịch vụ phù hợp, tăng sức hấp dẫn đối với khách hàng tiềm năng và đảm bảo thành công lâu dài.
+
+
+### Mở rộng chi nhánh sử dụng phân tích dự đoán {-}
+
+Các bước để xác định vị trí tốt nhất cho từng điểm bán hàng
+
+Bước 1: Thu thập dữ liệu
+
+- Dữ liệu Demographics như: Tổng số dân, giới tính và tình trạng cư trú /Zip code
+- Các yếu tố kinh thế như sales, giá nhà
+- Thông tin địa lý, vị trí đối thủ cạnh tranh
+
+Bước 2: Dự đoán doanh số cửa hàng cấp Zip -> ước tính doanh thu tiềm năng cho từng địa điểm
+
+Bước 3: Chọn cấp ZIP có doanh số cao nhất
+
+Bước 4: Sử dụng các mô hình để
+- Hiểu các yếu tố thúc đẩy doanh số bán hàng
+- Dự báo doanh thu, đồng thời nắm bắt được sức ảnh hưởng "ăn lẫn nhau" (cannibalization)
+- Dự đoán nhu cầu ở cấp độ sản phẩm / phân khúc
+- Tạo điểm tương đồng cho cửa hàng
+
+Bước 5: Xác định các vị trí có thể tối ưu hóa trông qua kết hợp ví trị các cửa hàng, chi phí, tiềm năng
+
+- Lặp lại các vị trí lưu trữ có thể có ở cấp Zip
+- Giảm thiểu cannibalization bằng regression model
+- Nhận diện khu vực Zip đang có lợi nhuận cao
+
+Bước 6: Xây dựng mô hình hồi quy cấp cửa hàng
+
+https://predikdata.com/footfall-analytics-for-site-selection-strategies/
