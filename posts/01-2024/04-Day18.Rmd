@@ -1,4 +1,4 @@
-## Ngày 18
+## Ngày 18 {-}
 
 ### Kết hợp ChatGPT vào Named Entity Recognition
 

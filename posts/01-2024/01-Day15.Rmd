@@ -1,4 +1,4 @@
-## Ngày 15
+## Ngày 15 {-}
 
 Hôm nay mình đã đọc gì
 
@@ -25,8 +25,8 @@ Sau đó sẽ dùng phương pháp đánh giá.
 Bài này sử dụng code dựa trên thư viện https://github.com/DEAP/deap
 
 Và code đầy đủ có tại https://github.com/FlorinAndrei/fast_feature_selection
-
-### Data Envelopment Analysis
+ 
+### Data Envelopment Analysis 
 
 Hôm nay mình đã đọc Chương một của cuốn sách [Data Envelopment Analysis](https://link.springer.com/book/10.1007/978-0-387-45283-8) Của tác giả William W. Cooper , Lawrence M. Seiford , Kaoru Tone.
 

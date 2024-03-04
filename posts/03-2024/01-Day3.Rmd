@@ -1,0 +1,50 @@
+## Ngày 3 {-}
+
+### Làm sao để xây dựng chiến lược mở rộng chi nhánh tốt nhất {-}
+
+https://predikdata.com/how-to-create-the-best-branch-expansion-strategy/
+
+**Location intelligence**
+
+Location Intelligence là một kỹ thuật phân tích dữ liệu nâng cao. Nó sử dụng thông tin địa lý để khám phá các patterns, xu hướng, và mối quan hệ dựa trên dữ liệu. Kỹ thuật này khai tháng sức mạnh của thông tin địa lý để tìm insight từ dữ liệu. Bằng cách kết hợp giữa dữ liệu kinh doanh và dữ liệu không gian, Location Intelligence cung cấp những thông tin có giá trị giúp ra quyết định tốt hơn.
+
+Có ba layer trong LI
+
+- Layer 1: Geographical
+- Layer 2: Store locations
+- Layer 3: Sales data
+
+**5 Lợi ích khi sử dụng LI**
+
+Data-driven dicision-marking: Sử dụng dữ liệu location để đánh giá khả năng tiếp cận của một cửa hàng so với đối thủ cạnh tranh
+
+
+Enhanced customer targeting : Sủ dụng location và heatmap để hiểu hành vi khách hàng https://predikdata.com/heat-maps-for-real-estate-investments/
+
+Cải thiện lợi thế cạnh tranh:  Phân tích khả năng di chuyện và lượng người qua lại giữa 2 loại cửa hàng: https://predikdata.com/foot-traffic-in-pharmacies-cvs-pharmacy-vs-walgreens/
+
+Tối ưu hóa chi phí
+
+Quản lý nhân sự hợp lý
+
+
+**Cách sử dụng LI cho chiến lược mở rộng chi nhánh**
+
+- Xác định thị trường 
+Sử dụng nhân khẩu học, sở thích của người tiêu dùng, hành vi mua hàng và nghiên cứu thị trường để xác định khách hàng lý tưởng của bạn. Thông tin vị trí giúp bạn tìm thấy những khu vực có lượng khách hàng tiềm năng tập trung cao, tập trung nỗ lực mở rộng vào những khu vực hứa hẹn nhất.
+
+- Phân tích đối thủ
+Đánh giá bối cảnh cạnh tranh, xác định vị trí và thị phần của đối thủ cạnh tranh. Khám phá những nhu cầu chưa được đáp ứng hoặc những khoảng trống thị trường để xác định cơ hội chi nhánh mới tại thị trường địa phương và quốc tế.
+
+- Đánh giá khả năng tiếp cận:
+Ước tính mức độ dễ dàng tiếp cận các địa điểm chi nhánh tiềm năng, bao gồm cơ sở hạ tầng giao thông, mô hình giao thông và tình trạng sẵn có của bãi đậu xe. Các trang web dễ dàng truy cập cho khách hàng và nhân viên góp phần tạo nên sự thành công của chi nhánh
+
+- Tối ưu hóa chi phí Bất Động Sản (https://predikdata.com/heat-maps-for-real-estate-investments/)
+
+Xác định các khu vực có giá bất động sản, giá cho thuê và quy định địa phương tối ưu bằng cách sử dụng thông tin vị trí. Cân bằng chi phí với lượng người qua lại và khả năng hiển thị cao đảm bảo lợi tức đầu tư cao, giúp bạn giảm chi phí và tăng doanh thu.
+
+- Đánh giá lực lượng lao động địa phương
+Phân tích thị trường lao động địa phương để đảm bảo có sẵn nhân viên lành nghề và đáng tin cậy. Thông tin vị trí cung cấp thông tin chi tiết về trình độ học vấn, bộ kỹ năng và mức lương trung bình, giúp bạn đưa ra quyết định nhân sự.
+
+- Quản lý hiệu suất
+Theo dõi hiệu quả hoạt động của chi nhánh mới bằng các chỉ số hiệu suất chính (KPI) và các tiêu chuẩn đã được thiết lập. Xác định các chi nhánh hoạt động kém hiệu quả và các yếu tố góp phần vào hiệu quả hoạt động của chúng để đưa ra quyết định dựa trên dữ liệu về việc cải thiện hoặc đóng cửa. Việc tích hợp chiến lược tiếp thị của bạn, bao gồm cả phương tiện truyền thông xã hội, với thông tin vị trí cho phép bạn thâm nhập các thị trường mới, nhắm mục tiêu vào các doanh nghiệp nhỏ và thúc đẩy mở rộng quốc tế. Bằng cách khai thác thông tin vị trí để mở rộng thị trường, bạn có thể cung cấp các sản phẩm hoặc dịch vụ phù hợp, tăng sức hấp dẫn đối với khách hàng tiềm năng và đảm bảo thành công lâu dài.

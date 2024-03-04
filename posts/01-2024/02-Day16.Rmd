@@ -1,4 +1,4 @@
-##  Ngày 16
+##  Ngày 16 {-}
 ### Chuẩn bị tài liệu cho khóa Data Analyst
 
 Tập trung vào các nội dung như Lambda function là gì, map, reduce,filter kết hợp cùng với lambda function
