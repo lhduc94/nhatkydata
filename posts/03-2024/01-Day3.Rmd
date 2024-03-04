@@ -79,3 +79,11 @@ Bước 5: Xác định các vị trí có thể tối ưu hóa trông q
 Bước 6: Xây dựng mô hình hồi quy cấp cửa hàng
 
 https://predikdata.com/footfall-analytics-for-site-selection-strategies/
+https://predikdata.com/foot-traffic-in-pharmacies-cvs-pharmacy-vs-walgreens/
+
+
+### Cannibalization Analysis
+
+https://locatium.ai/locaium-ai-blog-cannibalization-analysis/
+https://targomo.medium.com/introducing-cannibalization-analysis-examine-the-impact-of-competitors-and-network-branches-on-190e08ae002
+https://carto.com/blog/cannibalization-analysis-tutorial#:~:text=Cannibalization%20analysis%20evaluates%20the%20impact,impact%20on%20a%20business'%20revenue.
