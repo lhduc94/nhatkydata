@@ -85,10 +85,64 @@ https://predikdata.com/footfall-analytics-for-site-selection-strategies/
 https://predikdata.com/foot-traffic-in-pharmacies-cvs-pharmacy-vs-walgreens/
 
 
-### Cannibalization Analysis
+### Cannibalization Analysis (Tạm dịch phân tích ăn mòn) {-}
 
-https://locatium.ai/locaium-ai-blog-cannibalization-analysis/
-https://targomo.medium.com/introducing-cannibalization-analysis-examine-the-impact-of-competitors-and-network-branches-on-190e08ae002
-https://carto.com/blog/cannibalization-analysis-tutorial#:~:text=Cannibalization%20analysis%20evaluates%20the%20impact,impact%20on%20a%20business'%20revenue.
+- https://locatium.ai/locaium-ai-blog-cannibalization-analysis/
 
-https://github.com/CarlitosDev/causalCannibalisation?tab=readme-ov-file
+- https://targomo.medium.com/introducing-cannibalization-analysis-examine-the-impact-of-competitors-and-network-branches-on-190e08ae002
+
+- https://carto.com/blog/cannibalization-analysis-tutorial
+
+- https://github.com/CarlitosDev/causalCannibalisation
+
+Phân tích ăn mòn nhằm mục đích xác định liệu một shop mới có thu hút khách hàng khỏi những shop hiện có hay không, hay có khả năng tác động tiêu cực đến doanh thu của doanh nghiệp không, điều này rât quan trong đối với các doanh nghiệp có nhiều chi nhánh khác nhau, giúp họ đưa ra quyết định sáng suốt về địa điểm mở chi nhánh mới, di dời hoặc đóng cửa chi nhánh.
+
+Vậy, các doanh nghiệp nào có thể tận dụng Phân tích Cannibalization
+
+- Việc đặt một tháp 5G mới sẽ làm giảm tình trạng rời bỏ dịch vụ ở khu vực này như thế nào?
+- Trạm sạc EV với sẽ có tác động lớn nhất ở đâu
+- Nếu bắt đầu bán chocolate ở chi nhánh X thì nó ảnh hưởng như thế nào đến doanh số bán hàng ở chi nhánh Y
+
+
+Phân tích ăn mòn có bốn bước chính
+
+- Thu thập dữ liệu
+- Xử lý dữ liệu
+- Chạy phân tích ăn mòn
+- Ra quyết định
+
+#### Thu thập dữ liệu {-}
+
+Dữ liệu cần thu thập bao gồm
+
+- Vị trí các shop hiện có:
+
+- Vị trí tiềm năng: Là các vị trí đặt shop có thể gây ra "ăn mòn"
+
+Tiếp theo, chúng ta cần dữ liệu về những gì có thể thúc đấy quá trình "ăn mòn". Ví dụ
+
+- Dân số
+- Lượng khách hàng 
+- Phân chồng chéo giữa 2 phần bao phủ của 2 cửa hàng
+- urbanity levels: mức độ đô thị -> có thể thay bằng mật độ dân số
+
+
+#### Xử lý dữ liệu
+
+Xây dựng hàm processing
+
+- Với mỗi địa điểm, đưa mật độ dân số vào
+
+- Với mỗi địa điểm, tại một bán kính chỉ định, trả về vùng ảnh hưởng
+
+#### Chạy phân tích ăn mòn
+
+Xây dựng hàm "phân tích", kết quả trả ra các thông số như sau:
+
+- Perc_cov_cells : là phần trăm diện tích vùng ảnh hưởng của shop mới đối với shop hiện có
+
+- Perc_cov: là phần trăm dân số trùng lặp, 
+
+method: STRING indicates the method of trade area generation. Three options available: buffer, kring, isoline and custom. This method applies to all locations provided.
+
+https://academy.carto.com/advanced-spatial-analytics/spatial-analytics-for-bigquery/step-by-step-tutorials/store-cannibalization-quantifying-the-effect-of-opening-new-stores-on-your-existing-network
