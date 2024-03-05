@@ -89,10 +89,10 @@ https://predikdata.com/foot-traffic-in-pharmacies-cvs-pharmacy-vs-walgreens/
 
 Phân tích ăn mòn nhằm mục đích xác định liệu một shop mới có thu hút khách hàng khỏi những shop hiện có hay không, hay có khả năng tác động tiêu cực đến doanh thu của doanh nghiệp không, điều này rât quan trong đối với các doanh nghiệp có nhiều chi nhánh khác nhau, giúp họ đưa ra quyết định sáng suốt về địa điểm mở chi nhánh mới, di dời hoặc đóng cửa chi nhánh.
 
-Vậy, các doanh nghiệp nào có thể tận dụng Phân tích ăn mòn
+Vậy, với những bài toán nào có thể tận dụng Phân tích ăn mòn
 
 - Việc đặt một tháp 5G mới sẽ làm giảm tình trạng rời bỏ dịch vụ ở khu vực này như thế nào?
-- Trạm sạc EV với sẽ có tác động lớn nhất ở đâu
+- Trạm sạc EV mới sẽ có tác động lớn nhất ở đâu
 - Nếu bắt đầu bán chocolate ở chi nhánh X thì nó ảnh hưởng như thế nào đến doanh số bán hàng ở chi nhánh Y
 
 
