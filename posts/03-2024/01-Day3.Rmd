@@ -119,7 +119,7 @@ Tiếp theo, chúng ta cần dữ liệu về những gì có thể th
 - urbanity levels: mức độ đô thị -> có thể thay bằng mật độ dân số
 
 
-#### Xử lý dữ liệu
+#### Xử lý dữ liệu {-}
 
 Xây dựng hàm processing
 
@@ -127,7 +127,7 @@ Xây dựng hàm processing
 
 - Với mỗi địa điểm, tại một bán kính chỉ định, trả về vùng ảnh hưởng
 
-#### Chạy phân tích ăn mòn
+#### Chạy phân tích ăn mòn {-}
 
 Xây dựng hàm "phân tích", kết quả trả ra các thông số như sau:
 
