@@ -1,0 +1,3 @@
+## Ngày 8 {-}
+
+https://medium.com/towards-data-science/modeling-variable-seasonal-features-with-the-fourier-transform-18c792102047
