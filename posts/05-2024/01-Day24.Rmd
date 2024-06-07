@@ -1,0 +1,25 @@
+## Ngày 24 {-}
+### Feature Engineering for Machine Learning
+https://towardsdatascience.com/feature-engineering-for-machine-learning-eb2e0cff7a30
+
+### **Aggregation**
+
+Tạo các feature từ agg feature (hay groupby từ một cái gì đấy) trên các cột dữ liệu dạng số theo các hàm như 
+
+**:one:** sum\
+**:two:** average\
+**:three:** min\
+**:four:** max\
+**:five:** percentile\
+**:six:** standard deviation\
+**:seven:** coefficient of variation\
+
+Ví dụ muốn nhận biết được giao dịch gian lận (những giao dịch có giá trị nhỏ liên tiếp). Chúng ta có thể lấy trung bình giá trị năm lần giao dịch liên tiếp, nếu các giao dịch gian lận thì khả năng trung bình của nó sẽ nhỏ hơn các giao dịch không gian lận
+
+### **Differences and Ratios**
+
+Trong một số trường hợp, việc thay đổi pattern cũng là một tín hiệu để nhận biết gian lận, ví dụ như số lượng lần giao dịch trong ngày đó tăng lên đột ngột chẳng hạn. Thì lúc đó ta có thể tính tỉ lệ 
+
+![](https://miro.medium.com/v2/resize:fit:720/format:webp/1*JQ_kekeJ_fGZqZCSSJu4Xw.png)
+
+Trong ví dụ trên, Mặc dù số lần giao dịch của S1 và S3, S8 là cao nhưng so với trung vị số lần giao dịch/ngày trong 30 ngày thì độ lệch thấp (1.05 và 0.8 và 1.17) Trong khi với S5 và S7 thì trung vị chỉ có 2 và 6 trong khi số lần giao dịch trong ngày là 16 và 27 gấp 8 lần và 4.5 lần so với thông thường

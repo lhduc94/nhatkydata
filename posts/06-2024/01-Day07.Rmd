@@ -1,0 +1,17 @@
+## Ngày 07 {-}
+
+### Measuring The Intrinsic Causal Influence Of Your Marketing Campaigns
+
+https://towardsdatascience.com/measuring-the-intrinsic-causal-influence-of-your-marketing-campaigns-aa8354c26b7b
+
+
+Có cả notebook ở đây https://github.com/raz1470/causal_ai/tree/main/notebooks
+
+
+Bài này giúp trả lời những câu hỏi
+
+- Những thách thức khi nói về việc đo lường tiếp thị
+- Ảnh hưởng nhân quả nội tại là gì và cách thức hoạt động
+
+
+#### Những thách thức khi nói về việc đo lường tiếp thị

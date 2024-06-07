@@ -1,2 +1,3 @@
-## Practical Computer Simulations for Product Analysts
+## Ngày 26 {-}
+### Practical Computer Simulations for Product Analysts
 https://towardsdatascience.com/practical-computer-simulations-for-product-analysts-90b5deb6a54e
