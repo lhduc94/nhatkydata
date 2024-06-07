@@ -43,3 +43,134 @@ Với loại chiến dịch này thì xảy ra hai hình thức
 Vì mỗi Node Demanh, TV Spend, Social spend đều có organic click và social clicks thì làm thế nào để tính được mỗi Node ảnh hưởng thế nào đến Revenue.
 Phương pháp đưa ra là dùng Nội Suy Causal Inference
 
+#### Ảnh hưởng nhân quả nội tại là gì và cách thức hoạt động {-}
+
+Khái niệm này được đề cập trong paper năm 2020 https://proceedings.mlr.press/v238/janzing24a.html
+
+Và nó được triển khai trong module GCM trong package DoWhy https://www.pywhy.org/dowhy/v0.11.1/user_guide/causal_tasks/quantify_causal_influence/icc.html
+
+Nhắc lại **Causal Graphs**
+
+structural causal models (SCM) and additive noise models (ANM)
+
+![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*jwGjhEkmcZ9P8FpdzDmiug.png)
+
+
+- A,B,C là các nốt gốc
+- D, E không phải node gốc, chúng có thể tính
+    - D = A + B + C + noise
+    - E  = A + B + C + noise
+- F là nút đích vơi F = D + E + noise
+
+- Rõ ràng là 3 nút gốc chỉ có noise
+
+**Case Study** 
+
+Chọn nốt gốc nào để tối ưu
+
+Setup graph.
+
+```python
+
+node_lookup = {0: 'Demand',
+               1: 'TV spend',
+               2: 'Social spend', 
+               3: 'Organic clicks',                   
+               4: 'Social clicks',
+               5: 'Revenue'                                                                             
+ }
+
+total_nodes = len(node_lookup)
+
+# Create adjacency matrix - this is the base for our graph
+graph_actual = np.zeros((total_nodes, total_nodes))
+
+# Create graph using expert domain knowledge
+graph_actual[0, 3] = 1.0 # Demand -> Organic clicks
+graph_actual[0, 4] = 1.0 # Demand -> Social clicks
+graph_actual[1, 3] = 1.0 # Brand spend -> Organic clicks
+graph_actual[2, 3] = 1.0 # Social spend -> Organic clicks
+graph_actual[1, 4] = 1.0 # Brand spend -> Social clicks
+graph_actual[2, 4] = 1.0 # Social spend -> Social clicks
+graph_actual[3, 5] = 1.0 # Organic clicks -> Revenue
+graph_actual[4, 5] = 1.0 # Social clicks -> Revenue
+
+```
+
+
+Tạo dữ liệu
+
+```python
+# Create dataframe with 1 column per code
+df = pd.DataFrame(columns=node_lookup.values())
+
+# Setup data generating process
+df[node_lookup[0]] = np.random.normal(100000, 25000, size=(20000)) # Demand
+df[node_lookup[1]] = np.random.normal(100000, 20000, size=(20000)) # Brand spend
+df[node_lookup[2]] = np.random.normal(100000, 25000, size=(20000)) # Social spend
+df[node_lookup[3]] = 0.75 * df[node_lookup[0]] \
+                   + 0.50 * df[node_lookup[1]] \
+                   + 0.25 * df[node_lookup[2]] \
+                   + np.random.normal(loc=0, scale=2000, size=20000) # Organic clicks
+df[node_lookup[4]] = 0.30 * df[node_lookup[0]] \
+                   + 0.50 * df[node_lookup[1]] \
+                   + 0.70 * df[node_lookup[2]] \
+                   + np.random.normal(100000, 25000, size=(20000)) # Social clicks
+df[node_lookup[5]] = df[node_lookup[3]] \
+                   + df[node_lookup[4]] \
+                   + np.random.normal(loc=0, scale=2000, size=20000) # Revenue
+```
+
+Huấn luyện SCM
+
+```python
+import networkx as nx
+from dowhy import gcm
+
+# Setup graph
+graph = nx.from_numpy_array(graph_actual, create_using=nx.DiGraph)
+graph = nx.relabel_nodes(graph, node_lookup)
+
+# Create SCM
+causal_model = gcm.InvertibleStructuralCausalModel(graph)
+
+causal_model.set_causal_mechanism('Demand', gcm.EmpiricalDistribution()) # Deamnd
+causal_model.set_causal_mechanism('TV spend', gcm.EmpiricalDistribution()) # Brand spend
+causal_model.set_causal_mechanism('Social spend', gcm.EmpiricalDistribution()) # Social spend
+
+causal_model.set_causal_mechanism('Organic clicks', gcm.AdditiveNoiseModel(gcm.ml.create_ridge_regressor())) # Organic clicks
+causal_model.set_causal_mechanism('Social clicks', gcm.AdditiveNoiseModel(gcm.ml.create_ridge_regressor())) # Social clicks
+causal_model.set_causal_mechanism('Revenue', gcm.AdditiveNoiseModel(gcm.ml.create_ridge_regressor())) # Revenue
+
+gcm.fit(causal_model, df)
+```
+
+Chúng ta có thể dùng `auto_assignment` để gán model tự động. Đánh giá mô hình ở đây  https://www.pywhy.org/dowhy/v0.11.1/user_guide/modeling_gcm/model_evaluation.html
+
+
+Kết quả
+
+```python
+# calculate intrinsic causal influence
+ici = gcm.intrinsic_causal_influence(causal_model, target_node='Revenue')
+
+def convert_to_percentage(value_dictionary):
+    total_absolute_sum = np.sum([abs(v) for v in value_dictionary.values()])
+    return {k: round(abs(v) / total_absolute_sum * 100, 1) for k, v in value_dictionary.items()}
+
+convert_to_percentage(ici)
+```
+
+```
+{
+    'Demand':0.31,
+    'TV spend':0.18,
+    'Social spend':0.23,
+    'Organic clicks':0.0,
+    'Social clicks': 0.28,
+    'Revenue':0.0
+}
+```
+...
+
+Khó hiểu là mấy trọng số 0.75, 0.5 , 0.3 ở đâu ra
