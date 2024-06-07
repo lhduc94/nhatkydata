@@ -33,9 +33,13 @@ Với loại chiến dịch này thì xảy ra hai hình thức
 - Họ có click nếu họ chưa biết đến brand? Nếu không cần chiến dịch quảng cáo thì có mua một cách tự nhiên không ( cụm organically hay dùng khi nói về các lượt tự nhiên ) -> Cũng khó có thể đo lường
 
 **Chiến dịch giữ chân**
+
 Đơn giản là giữ chân khách hàng đã mua sản phẩm. Hay dùng A/B Testing
 
 Đồ thị lượt chuyển đổi
+
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*EABiarh2p-8tlc2SW00Xpg.png)
 
-Rồi làm thế nào tính mỗi nốt ảnh hưởng như thế nào
+Vì mỗi Node Demanh, TV Spend, Social spend đều có organic click và social clicks thì làm thế nào để tính được mỗi Node ảnh hưởng thế nào đến Revenue.
+Phương pháp đưa ra là dùng Nội Suy Causal Inference
+
