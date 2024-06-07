@@ -1,6 +1,6 @@
 ## Ngày 07 {-}
 
-### Measuring The Intrinsic Causal Influence Of Your Marketing Campaigns
+### Measuring The Intrinsic Causal Influence Of Your Marketing Campaigns {-}
 
 https://towardsdatascience.com/measuring-the-intrinsic-causal-influence-of-your-marketing-campaigns-aa8354c26b7b
 
@@ -14,8 +14,28 @@ Bài này giúp trả lời những câu hỏi
 - Ảnh hưởng nhân quả nội tại là gì và cách thức hoạt động
 
 
-#### Những thách thức khi nói về việc đo lường tiếp thị
+#### Những thách thức khi nói về việc đo lường tiếp thị {-}
 
 **Chiến dịch thương hiệu**
 
-:one:
+
+Mục đích của chiến dịch thương hiệu là để thu hút sự chú ý của những người mới. Những chiến dịch này thường chạy trên TV hoặc mạng xã hội và ở dạng video. Chúng thường không kêu gọi hành động trực tiếp như  “our product will last you a lifetime”.
+
+Thách thức của việc quảng cáo trên TV là không xác định được ai đã xem quảng cáo. Điều này cũng xảy ra khi chúng ta xem quảng cáo trên Facebook và truy cập trang web mua hàng một cách tự nhiên mà không thông qua đường dẫn trên Facebook vào ngày hôm sau thì việc đo lường cũng gây khó khăn vì chúng ta không có cách liên kết hai sự kiện này 
+
+NGoài ra còn có thách thức thứ hai là việc hiệu ứng vị delayed. Khi quảng cáo, có thế mất vài ngày/tuần/tháng để họ cân nhắc mua sản phẩm của bạn
+
+**Chiến dịch hiệu suất**
+Chiến dịch hiệu suất nhắm vào các khách hàng đang cân nhắc mua sản phẩm của bạn. Các chiến dịch này chạy trên các nền tảng tìm kiếm,mạng xã hội trả phí hoặc các kết tiếp thị liên kiết. Nó thường có dạng "click now to get 5% off your first purchase".
+
+Với loại chiến dịch này thì xảy ra hai hình thức
+- Họ có thể nhấp vào và mua ngay nếu đã quen thương hiệu này
+- Họ có click nếu họ chưa biết đến brand? Nếu không cần chiến dịch quảng cáo thì có mua một cách tự nhiên không ( cụm organically hay dùng khi nói về các lượt tự nhiên ) -> Cũng khó có thể đo lường
+
+**Chiến dịch giữ chân**
+Đơn giản là giữ chân khách hàng đã mua sản phẩm. Hay dùng A/B Testing
+
+Đồ thị lượt chuyển đổi
+![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*EABiarh2p-8tlc2SW00Xpg.png)
+
+Rồi làm thế nào tính mỗi nốt ảnh hưởng như thế nào

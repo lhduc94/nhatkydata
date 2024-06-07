@@ -18,5 +18,3 @@ feature-engineering-for-machine-learning
 aggregation
 differences-and-ratios
 tháng-06-2024
-measuring-the-intrinsic-causal-influence-of-your-marketing-campaigns
-những-thách-thức-khi-nói-về-việc-đo-lường-tiếp-thị
