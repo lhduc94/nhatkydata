@@ -38,7 +38,7 @@ Với loại chiến dịch này thì xảy ra hai hình thức
 
 Đồ thị lượt chuyển đổi
 
-![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*EABiarh2p-8tlc2SW00Xpg.png)
+![](https://miro.medium.com/v2/1*EABiarh2p-8tlc2SW00Xpg.png)
 
 Vì mỗi Node Demanh, TV Spend, Social spend đều có organic click và social clicks thì làm thế nào để tính được mỗi Node ảnh hưởng thế nào đến Revenue.
 Phương pháp đưa ra là dùng Nội Suy Causal Inference
