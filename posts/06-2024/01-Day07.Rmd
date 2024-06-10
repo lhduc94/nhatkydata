@@ -174,3 +174,6 @@ convert_to_percentage(ici)
 ...
 
 Khó hiểu là mấy trọng số 0.75, 0.5 , 0.3 ở đâu ra
+
+
+Ảnh hưởng nhân quả nội tại - Cách làm việc
